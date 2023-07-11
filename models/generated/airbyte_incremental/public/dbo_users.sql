@@ -1,8 +1,10 @@
 {{ config(
-    indexes = [{'columns':['_airbyte_emitted_at'],'type':'btree'}],
-    unique_key = '_airbyte_ab_id',
+    indexes = [{'columns':['_airbyte_emitted_at', 'userid'],'type':'btree'}],
+    unique_key = 'userid',
     schema = "public",
-    tags = [ "top-level" ]
+    tags = [ "top-level" ],
+    incremental_strategy='delete+insert',
+    materialized='incremental'
 ) }}
 -- Final base SQL model
 -- depends_on: {{ ref('dbo_users_ab3') }}
