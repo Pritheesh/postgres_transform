@@ -1,1 +1,0 @@
-{"ssl":false,"host":"0.0.0.0","port":5432,"schema":"public","database":"destdb","password":"StrongPassw0rd","ssl_mode":{"mode":"disable"},"username":"postgres","tunnel_method":{"tunnel_method":"NO_TUNNEL"}}
