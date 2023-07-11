@@ -1,0 +1,4 @@
+dt-env/
+target/
+dbt_packages/
+logs/
