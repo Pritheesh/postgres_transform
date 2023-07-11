@@ -7,7 +7,7 @@ normalize:
   outputs:
     prod:
       dbname: destdb
-      host: localhost
+      host: 0.0.0.0
       pass: StrongPassw0rd
       port: 5432
       schema: public
